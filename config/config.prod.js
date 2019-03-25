@@ -2,14 +2,12 @@
 
 module.exports = () => {
     const config = exports = {};
+    console.log('happy')
 
     config.debug = false;
 
-    // 用于安全校验和回调域名根路径 生产线域名（必填）
-    config.origin = 'https://xxx.xxx.com';
-
     // 百度地图api key
-    config.BAIDUAK = 'xxxxxxxxxx';
+    config.BAIDUAK = 'czgPkGMmx7eYlsLtGGNF8TGLr8VOMeCy';
 
     // github login
     config.github = {
@@ -35,8 +33,8 @@ module.exports = () => {
     config.redis = {
         client: {
             port: 6379, // Redis port
-            host: 'xx.xx.xx.xx', // Redis host
-            password: 'xxxxxx',
+            host: '123.207.119.41', // Redis host
+            password: '',
             db: 0,
         },
     };
@@ -45,7 +43,7 @@ module.exports = () => {
     const dbclients = {
         db3: {
             // 单机部署
-            url: 'mongodb://127.0.0.1:27017/performance',
+            url: 'mongodb://123.207.119.41:27017/performance',
             // 副本集 读写分离
             // url: 'mongodb://127.0.0.1:28100,127.0.0.1:28101,127.0.0.1:28102/performance?replicaSet=rs1',
             // 集群分片
@@ -63,7 +61,7 @@ module.exports = () => {
     if (config.report_data_type === 'mongodb') {
         dbclients.db1 = {
             // url: 'mongodb://127.0.0.1:27017,127.0.0.1:27018/performance?replicaSet=performance',
-            url: 'mongodb://127.0.0.1:27019/performance',
+            url: 'mongodb://123.207.119.41:27019/performance',
             options: {
                 poolSize: 100,
                 keepAlive: 10000,
