@@ -17,7 +17,7 @@ module.exports = () => {
 
     config.middleware = [];
 
-    config.host = 'monitor.seeekhappy.cn';
+    config.host = 'monitor.seekhappy.cn';
 
     config.port = 80;
 
