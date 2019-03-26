@@ -17,9 +17,9 @@ module.exports = () => {
 
     config.middleware = [];
 
-    config.host = 'monitor.seekhappy.cn';
+    config.host = '127.0.0.1';
 
-    config.port = 80;
+    config.port = 7001;
 
     // 用于安全校验和回调域名根路径 开发路径域名（必填）
     config.origin = `http://${config.host}:${config.port}`;

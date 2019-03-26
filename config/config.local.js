@@ -2,13 +2,9 @@
 
 module.exports = () => {
     const config = exports = {};
-    console.log('happy')
 
     config.debug = false;
 
-
-    // 用于安全校验和回调域名根路径 开发路径域名（必填）
-    config.origin = 'http://monitor.seekhappy.cn';
 
     // 百度地图api key
     config.BAIDUAK = 'czgPkGMmx7eYlsLtGGNF8TGLr8VOMeCy';
